@@ -1076,7 +1076,7 @@ Bmoveleft:
 	MOV [ppy], 0
 	CALL PrintImage
 	
-	mov [boatx],0
+	mov [boatx],160
 	mov [icebergy],0
 	mov [icebergy2],0
 	mov [icebergy3],0
@@ -1089,9 +1089,9 @@ Bmoveleft:
 	mov ah, 0
 	int 16h
 	cmp al, 113
-	je ExitProgram
+	je walkloop
 	cmp al, 81
-	je ExitProgram
+	je walkloop
 	ExitProgramm:
 	jmp CheckKey5
 	
