@@ -602,7 +602,7 @@ wmoveleft:
 	
 	
 	Dprintmovement:
-	cmp [timeinthedarksea],2
+	cmp [timeinthedarksea],600
 	jg bloodstage3
 	cmp [timeinthedarksea],400
 	jg bloodstage2
@@ -887,7 +887,7 @@ Bmoveleft:
     MOV [ppy], 140
     CALL PrintImage
 	
-	cmp [bloodtime],200
+	cmp [bloodtime],700
 	jl notreasure
 	
 	inc [treasurey]
